@@ -23,7 +23,7 @@ A minimal, clean, and configurable **Rate Limiting Middleware** implementation i
 
 | Area        | Tech                         |
 |-------------|------------------------------|
-| Framework   | ASP.NET Core 7 / .NET 6+      |
+| Framework   | .NET 9                       |
 | Architecture| Domain-Driven Design (DDD)   |
 | Rate Limiting | Custom Middleware + InMemory |
 | Testing     | xUnit, Moq                   |
@@ -43,7 +43,6 @@ RateLimiterAPI/
 │   └── RateLimit/                 # Entities, Interfaces, Models
 ├── Infrastructure/
 │   └── Middlewares/              # RateLimitingMiddleware
-│   └── InfrastructureServiceCollections.cs
 ├── Utils/
 │   └── Options/RateLimiterOptions.cs
 ├── Controllers/
@@ -58,7 +57,7 @@ RateLimiterAPI/
 ## 🧪 Running Unit Tests
 
 ### Prerequisites
-- .NET 6 SDK+
+- .NET 9 SDK
 - `Moq` and `xUnit`
 
 ### Run all tests:
